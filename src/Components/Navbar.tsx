@@ -10,9 +10,9 @@ export default function Navbar() {
   const [isopen, setIsOpen] = useState(false);
 
   return (
-    <div className=" bg-slate-50 shadow-2xl">
+    <div className=" bg-slate-50 shadow-2xl backdrop-blur-3xl">
       <Maxwidthwrapper>
-        <nav className="flex justify-between p-4 backdrop-blur-3xl">
+        <nav className="flex justify-between py-4">
           <div className="flex items-center gap-0.5">
             <div>
               <Book className="text-blue-800 font-bold lg:w-14  lg:h-14 w-6 h-6 " />
