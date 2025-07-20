@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Maxwidthwrapper from "./Maxwidthwrapper";
+import Maxwidthwrapper from "../../../Components/Maxwidthwrapper";
 import { ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link";
 

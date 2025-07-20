@@ -1,6 +1,6 @@
-import Herosection from '@/Components/Herosection'
-import Trust from '@/Components/Trust'
+import Herosection from '@/app/(home)/components/Herosection'
 import React from 'react'
+import Trust from './components/Trust'
 
 export default function Home() {
   return (

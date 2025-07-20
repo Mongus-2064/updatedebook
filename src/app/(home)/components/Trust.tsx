@@ -1,5 +1,5 @@
+import Maxwidthwrapper from "@/Components/Maxwidthwrapper";
 import React from "react";
-import Maxwidthwrapper from "./Maxwidthwrapper";
 
 export default function Trust() {
   return (
