@@ -7,10 +7,10 @@ import Link from "next/link";
 import Maxwidthwrapper from "./Maxwidthwrapper";
 
 export default function Navbar() {
-  const [isopen, setIsOpen] = useState(false);
+  const [isopen, setIsOpen] = useState<Boolean>(false);
 
   return (
-    <div className=" bg-slate-50 shadow-2xl backdrop-blur-3xl">
+    <div className=" bg-slate-50 shadow-2xl backdrop-blur-3xl   ">
       <Maxwidthwrapper>
         <nav className="flex justify-between py-4">
           <div className="flex items-center gap-0.5">

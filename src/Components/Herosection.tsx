@@ -1,11 +1,15 @@
-import React from "react";
+"use client"
+
+import React,{useState} from "react";
 import Maxwidthwrapper from "./Maxwidthwrapper";
-import { ArrowRight,  Sparkles,  } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 export default function Herosection() {
+  const [isloading, setIsLoading] = useState<boolean>(false);
+
   return (
-    <div className="lg:mt-14 mt-4 md:px-4 px-4 flex justify-center">
+    <div className="lg:mt-20 mt-4 md:px-4 px-4 flex justify-center">
       <Maxwidthwrapper>
         <div className="flex flex-col justify-center items-center">
           <div className="bg-blue-100 py-2 px-6 rounded-full max-w-fit  ">
@@ -22,13 +26,24 @@ export default function Herosection() {
           <div className="flex mt-6 flex-col items-center">
             <p className="flex flex-col items-center text-xl text-gray-600 lg:tracking-wider font-thin text-start">
               Explore thousands of books, save your favorites, and discover new
-              world<span>
+              world
+              <span>
                 Sign up today to build your personal reading collection.
               </span>
             </p>
-           <Link 
-           className="flex mt-6 bg-blue-800 gap-3 text-white px-8 py-3  items-center font-semibold rounded-md"
-           href={"/collections"}>Browse Books <ArrowRight size={14}/></Link>
+            <Link
+              onClick={() => setIsLoading(true)}
+              className="flex mt-6 bg-blue-800 gap-3 text-white px-8 py-3  items-center font-semibold rounded-md hover:scale-105 transition-transform"
+              href={"/collections"}
+            >
+              {isloading ? (
+                <p>Loading...</p>
+              ) : (
+                <p className="flex items-center">
+                  Browse Books <ArrowRight size={14} />
+                </p>
+              )}
+            </Link>
           </div>
         </div>
       </Maxwidthwrapper>
