@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import { AlignLeft, Book } from "lucide-react";
 import Link from "next/link";
 import Maxwidthwrapper from "./Maxwidthwrapper";
@@ -62,6 +61,7 @@ export default function Navbar() {
             ""
           )}
       </Maxwidthwrapper>
+      
     </div>
   );
 }

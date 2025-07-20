@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Maxwidthwrapper from "./Maxwidthwrapper";
 import { ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link";
@@ -46,6 +46,8 @@ export default function Herosection() {
             </Link>
           </div>
         </div>
+      <hr className=" text-gray-200 mt-6 w-full" />
+
       </Maxwidthwrapper>
     </div>
   );
