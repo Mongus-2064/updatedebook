@@ -7,7 +7,6 @@ import { Books } from '@/utils/dummydata'
 
 export default  function Home() {
 
-  console.log(Books)
   return (
     <div>
       <Herosection/>
