@@ -12,7 +12,7 @@ export default  function Home() {
     <div>
       <Herosection/>
       <Trust/>
-      <Booklist/>
+      <Booklist Books={Books} />
     </div>
   )
 }
