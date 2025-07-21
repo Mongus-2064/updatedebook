@@ -6,7 +6,7 @@ import Maxwidthwrapper from '@/Components/Maxwidthwrapper'
 export default function Booklist({Books}: {Books : Books[]}) {
   return (
     <Maxwidthwrapper>
-      <div className='grid md:grid-cols-2  grid-cols-1 gap-4'>
+      <div className='grid md:grid-cols-2 p-2 md:p-0 grid-cols-1 gap-4'>
       {Books.map((b)=>(
        <Bookcard books={b} key={b.id} />
       ))}
